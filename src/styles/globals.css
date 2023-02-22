@@ -46,6 +46,18 @@ label
   animation: bounce 1s infinite alternate-reverse;
 }
 
+input, textarea
+{
+  padding:0.5em;
+  padding-inline: 1em;
+  font-size: 14px;
+}
+
+button
+{
+  font-size:14px;
+}
+
 @keyframes bounce
 {
   from{transform: translate(209px,717px);}

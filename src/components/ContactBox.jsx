@@ -5,14 +5,14 @@ const ContactBox = () => {
     return ( 
         <div className="h-[400px] w-[500px] bg-white bg-black bg-opacity-30 backdrop-blur-sm rounded-2xl flex flex-col items-center gap-5">
             <form className="flex flex-col items-center justify-center h-[300px] w-[500px]">
-                <label htmlFor="email" className="text-white p-1 mt-4 ">Your Email</label>
-                <input type="text" className="w-3/4 p-1 text-gray-600"/>
-                <label htmlFor="Subject" className="text-white p-1 mt-4">Subject</label>
-                <input type="text" className="w-3/4 p-1 text-gray-600"/>
-                <label htmlFor="Subject" className="text-white p-1 mt-4">Message</label>
-                <textarea name="Message" id="" cols="30" rows="10" className="w-3/4 p-1 text-gray-600"></textarea>
+                {/* <label htmlFor="email" className="text-white p-1 mt-4 ">Your Email</label> */}
+                <input type="text" className="w-3/4 mt-10 text-gray-600 rounded-2xl" placeholder="Your Email"/>
+                {/* <label htmlFor="Subject" className="text-white p-1 mt-4">Subject</label> */}
+                <input type="text" className="w-3/4 mt-4 text-gray-600 rounded-2xl" placeholder="Your Subject"/>
+                {/* <label htmlFor="Subject" className="text-white p-1 mt-4">Message</label> */}
+                <textarea name="Message" id="" cols="30" rows="10" className="w-3/4 mt-4 text-gray-600 rounded-2xl" placeholder="Your Message"></textarea>
             </form>
-            <button className='hover:bg-gray-700 hover:border-gray-700 text-white py-2 px-5 border-2 border-white rounded-full w-1/2'>Send</button>
+            <button className='hover:bg-gray-700 hover:border-gray-700 text-white py-2 px-5 border-2 border-white rounded-full w-1/4'>Send</button>
         </div>
      ); 
 }
